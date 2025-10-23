@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VED: Your Personal Wellspring of Inner Wisdom</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Ancient, Earthy Palette
+                        'primary': '#A0522D',   /* Sienna/Terracotta (Wisdom, Foundation) */
+                        'secondary': '#7C9E83', /* Muted Sage Green (Peace, Growth) */
+                        'background': '#FDF7E3', /* Light Parchment */
+                        'text-dark': '#333333',
+                    },
+                    fontFamily: {
+                        // Using default fonts but will rely on styling for the feel
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* General button styling for interaction - now feels embossed/carved */
+        .btn-carved {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px #8b4513; /* Darker bottom shadow for depth */
+            border-radius: 12px;
+        }
+        .btn-carved:hover {
+            transform: translateY(-2px); 
+            box-shadow: 0 8px #8b4513; /* Increased depth on hover */
+        }
+        /* Gradient for an aged, luminous feel */
+        .hero-luminous {
+            background-image: linear-gradient(135deg, #A0522D, #C36A3A); /* Sienna to warm copper */
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        /* Specific styling for the unique sign-up block - contrasting green */
+        .unique-signup-card {
+             border-top: 6px solid #A0522D; /* Terracotta line */
+             background-color: #f0f7f0; /* Very light sage background for contrast */
+             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background font-sans text-text-dark">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/95 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="#" class="text-4xl font-extrabold text-primary flex items-center tracking-wider">
+                <!-- UNIQUE VED GLYPH: Ascending Wisdom -->
+                <svg class="w-10 h-10 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Base (Foundation/Earth) - Primary Color -->
+                    <rect x="5" y="16" width="14" height="3" rx="1.5" fill="currentColor" class="text-primary"/>
+                    <!-- Ascending Path (Growth/Peace) - Secondary Color -->
+                    <rect x="7" y="11" width="10" height="3" rx="1.5" fill="currentColor" class="text-secondary"/>
+                    <!-- Pinnacle (Clarity/Illumination) - Gold/Primary Color -->
+                    <path d="M12 4L14 8H10L12 4Z" fill="currentColor" class="text-primary"/>
+                </svg>
+                VED
+            </a>
+            <div class="space-x-6">
+                <a href="#vision" class="text-gray-700 hover:text-primary transition duration-300 hidden sm:inline font-serif">The Scrolls</a>
+                <a href="#peers" class="text-gray-700 hover:text-primary transition duration-300 hidden sm:inline font-serif">The Keepers</a>
+                <a href="#waitlist" class="btn-carved bg-primary text-white px-5 py-3 rounded-xl text-md font-semibold hover:bg-[#8b4513] transition duration-300 shadow-xl">
+                    Begin Your VED
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (Focus: Heart Connection) - UPDATED FOR REALNESS AND PASSION -->
+        <section id="hero" class="py-24 lg:py-40 hero-luminous text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl sm:text-7xl lg:text-8xl font-serif font-extrabold leading-tight mb-8">
+                    You don't need platitudes.<br class="hidden sm:inline" /> You need the **VED**: The Map Drawn by the Traveler Before You.
+                </h1>
+                <p class="text-xl sm:text-3xl font-light text-amber-100 mb-12 max-w-5xl mx-auto">
+                    Tired of masking the struggle? VED uses the **undeniable truth** of your physiological state to bypass fakeness. We connect you, anonymously, to a **Peer Veda**—a genuine human who has already won the exact inner battle you are fighting. Real wisdom, forged in reality.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-10">
+                    <a href="#waitlist" class="btn-carved inline-block bg-secondary text-white font-extrabold py-5 px-16 rounded-2xl shadow-2xl transition duration-300 ease-in-out text-xl hover:bg-[#6c8b72] transform hover:scale-105">
+                        Claim the First Scroll
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Unique Selling Points (The Sacred Pillars) -->
+        <section id="moat" class="py-20 lg:py-32">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-5xl font-serif font-bold text-center mb-16 text-primary">The Sacred Pillars of VED</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Pillar 1: AI Detection (Inner Oracle) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-b-4 border-primary">
+                        <div class="text-primary mb-5 flex items-center justify-center h-16 w-16 bg-[#f7eed4] rounded-full">
+                            <!-- Icon: Eye of Truth -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-semibold mb-3 text-primary">The Inner Oracle</h3>
+                        <p class="text-gray-600 font-serif">Our AI acts as an impartial oracle, reading the truth of your body's rhythm (pulse, HRV). Objective clarity is the first step on the path to self-mastery.</p>
+                    </div>
+
+                    <!-- Pillar 2: Vetted Peers (The Keepers of Experience) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-b-4 border-secondary">
+                        <div class="text-secondary mb-5 flex items-center justify-center h-16 w-16 bg-[#ebf5ed] rounded-full">
+                            <!-- Icon: Shared Wisdom -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.832 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.794 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.168 18 16.5 18s-3.332.477-4.5 1.247M12 6.253v13"/></svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-semibold mb-3 text-secondary">The Keeper's Counsel</h3>
+                        <p class="text-gray-600 font-serif">You are paired with a 'Veda'—a peer who has successfully completed the same inner trial. Their knowledge is drawn from experience, not theory. They share their path.</p>
+                    </div>
+
+                    <!-- Pillar 3: Absolute Anonymity (The Sacred Veil) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-b-4 border-primary">
+                        <div class="text-primary mb-5 flex items-center justify-center h-16 w-16 bg-[#f7eed4] rounded-full">
+                            <!-- Icon: Veil of Anonymity -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-4 18c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zM9.5 12.5h5"/></svg>
+                        </div>
+                        <h3 class="text-3xl font-serif font-semibold mb-3 text-primary">The Sacred Veil</h3>
+                        <p class="text-gray-600 font-serif">Speak from the heart, knowing your identity is shielded by an AI avatar. This protected space allows for genuine, fearless self-expression in any language.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. How It Works (The Path) -->
+        <section id="vision" class="py-16 lg:py-24 bg-background">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif font-bold text-center mb-16 text-text-dark">The Journey of the Heart: Finding Your Center</h2>
+
+                <div class="space-y-12 max-w-4xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl font-serif font-bold shadow-lg">I</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-primary font-serif">The Glimpse of Truth</h3>
+                            <p class="text-gray-600">The VED app receives your biometrics, offering you a neutral, data-driven glimpse into your current state of being (stress, fatigue, or balance).</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl font-serif font-bold shadow-lg">II</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-primary font-serif">The Chosen Hand</h3>
+                            <p class="text-gray-600">You are presented with Keepers (Peers) whose proven journey perfectly aligns with the challenge identified by the Oracle. You choose the one who calls to your heart.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl font-serif font-bold shadow-lg">III</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-primary font-serif">Speaking Under the Veil</h3>
+                            <p class="text-gray-600">Enter a secure, private session. Communicate your deepest thoughts through chat or video, entirely shielded by the sacred veil of anonymity.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl font-serif font-bold shadow-lg">IV</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-primary font-serif">The Exchange of Veda</h3>
+                            <p class="text-gray-600">Receive compassionate counsel, practical methods, and authentic guidance from someone who truly knows your current inner landscape.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-lg border-l-4 border-primary">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full text-xl font-serif font-bold shadow-lg">V</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-1 text-primary font-serif">Sealing the Mastery</h3>
+                            <p class="text-gray-600">Every journey builds mastery. Track your progress with inner rewards and measure your increasing emotional intelligence and balance over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 4. CTA for Peer Mentors (The Keepers) -->
+        <section id="peers" class="py-20 lg:py-32 bg-secondary/80">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-text-dark">
+                <h2 class="text-4xl md:text-5xl font-serif font-extrabold mb-4 text-white">Answer the Call: Be The Keeper.</h2>
+                <p class="text-xl mb-10 opacity-90 max-w-3xl mx-auto text-gray-100 font-serif">
+                    If your personal journey has granted you wisdom over adversity, join the Keepers of VED. Help guide others, anonymously and globally.
+                </p>
+                <a href="mailto:peervetting@ved.tech" class="btn-carved inline-block bg-primary text-white font-bold py-4 px-12 rounded-xl shadow-xl transition duration-300 ease-in-out hover:bg-[#8b4513] text-lg">
+                    Offer Your Wisdom
+                </a>
+                <p class="text-sm mt-6 text-gray-200">The most powerful Veda is one born of experience.</p>
+            </div>
+        </section>
+
+        <!-- 5. Early Access Waitlist (The Unique Entry Point) -->
+        <section id="waitlist" class="py-20 bg-background">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-xl">
+                <h2 class="text-4xl font-serif font-bold text-center mb-4 text-primary">Engrave Your Name in the Scrolls.</h2>
+                <p class="text-center text-gray-700 mb-10 font-serif">
+                    The VED journey begins soon. Claim your spot in the private beta to be granted the first access.
+                </p>
+
+                <form class="unique-signup-card p-10 rounded-2xl space-y-6">
+                    <div>
+                        <label for="email" class="block text-md font-semibold text-text-dark mb-2 font-serif">Your Pathfinding Email:</label>
+                        <input type="email" id="email" name="email" placeholder="wisdom@yourheart.com" required class="w-full px-5 py-3 border border-gray-400 rounded-xl focus:ring-secondary focus:border-secondary transition duration-150 shadow-inner">
+                    </div>
+                    <div class="flex items-center">
+                        <input id="peer-interest" name="peer-interest" type="checkbox" class="h-5 w-5 text-secondary rounded border-gray-500 focus:ring-secondary">
+                        <label for="peer-interest" class="ml-3 block text-md text-text-dark font-semibold font-serif">I wish to become a Keeper (Peer Veda).</label>
+                    </div>
+                    <button type="submit" class="w-full btn-carved bg-primary text-white font-extrabold py-4 px-6 rounded-2xl shadow-xl transition duration-300 ease-in-out text-xl hover:bg-[#8b4513]">
+                        SEAL THE PACT
+                    </button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-text-dark text-white py-12 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm mb-4 font-serif">VED: Your Inner Compass, Guided by Shared Wisdom. (VED is a peer support platform and not a licensed clinical resource.)</p>
+            <div class="flex justify-center space-x-8 text-sm font-serif">
+                <a href="#" class="text-gray-400 hover:text-secondary transition duration-300">Veil Protocol</a>
+                <a href="#" class="text-gray-400 hover:text-secondary transition duration-300">The Code of the Keepers</a>
+            </div>
+            <p class="text-gray-500 text-xs mt-6">&copy; 2024 VED. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
